@@ -1,0 +1,55 @@
+RFK
+
+Responsibilites and Components
+
+Actors					Actions
+-Artifacts				-inputs/user controls
+-Robot					-movement/Update
+-Marquee				-Display
+					-Handle Collisions
+
+
+			Actor
+	
+			Text
+			Position
+			Velocity
+
+Robot			Artifact		Marquee
+
+Text			Text			Text
+Position		Position		Position
+Velocity		Description		Velocity (set at zero. All things that can move can use that)
+			Velocity(at zero)
+
+
+Actions/Script
+
+			Action (abstract class)
+
+			Execute(cast)
+
+
+Control Actors		Move Actors		Draw Actors Action		Handle collisions
+
+Execute(cast)		Execute(cast)		Execute(cast)			Execute(cast)
+
+
+
+			Services
+
+Input Service			Output service
+
+get direction			clear screen
+				draw actor
+				draw actors
+				flush buffer
+
+
+			Director
+
+ Director
+ - Cast
+ - script
+
+Start Game
